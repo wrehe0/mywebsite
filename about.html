@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Об учебе - Учебное Портфолио</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="theme-switcher">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="logo-text">
+                    <h1>Учебное Портфолио</h1>
+                    <p class="tagline">Студент • Разработчик • Исследователь</p>
+                </div>
+            </div>
+            
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="about.html" class="nav-link active"><i class="fas fa-user-graduate"></i> Об учебе</a></li>
+                    <li><a href="blog.html" class="nav-link"><i class="fas fa-book"></i> Блог</a></li>
+                    <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>О моей учебе</h1>
+            <p>Здесь я рассказываю о своем учебном пути, достижениях и планах</p>
+        </section>
+
+        <section class="about-content">
+            <div class="about-grid">
+                <div class="about-card main-card">
+                    <h2><i class="fas fa-bullseye"></i> Цели обучения</h2>
+                    <div class="goals-list">
+                        <div class="goal-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Освоить веб-разработку</h3>
+                                <p>Изучить HTML, CSS, JavaScript и современные фреймворки</p>
+                            </div>
+                        </div>
+                        <div class="goal-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Научиться работать с Git</h3>
+                                <p>Освоить систему контроля версий и совместную разработку</p>
+                            </div>
+                        </div>
+                        <div class="goal-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Создать портфолио</h3>
+                                <p>Разработать несколько реальных проектов для портфолио</p>
+                            </div>
+                        </div>
+                        <div class="goal-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Подготовиться к стажировке</h3>
+                                <p>Приобрести навыки, необходимые для начала карьеры</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card" id="skills">
+                    <h2><i class="fas fa-laptop-code"></i> Изученные технологии</h2>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>Frontend</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag advanced">HTML5</span>
+                                <span class="skill-tag advanced">CSS3</span>
+                                <span class="skill-tag intermediate">JavaScript</span>
+                                <span class="skill-tag beginner">React</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Инструменты</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag intermediate">Git</span>
+                                <span class="skill-tag intermediate">GitHub</span>
+                                <span class="skill-tag beginner">VS Code</span>
+                                <span class="skill-tag beginner">Figma</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Другое</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag intermediate">Responsive Design</span>
+                                <span class="skill-tag beginner">SEO Basics</span>
+                                <span class="skill-tag beginner">Web Accessibility</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card full-width" id="schedule">
+                <h2><i class="fas fa-calendar-alt"></i> Учебное расписание</h2>
+                <div class="schedule">
+                    <div class="schedule-day">
+                        <h3>Понедельник</h3>
+                        <ul>
+                            <li><strong>9:00-11:00</strong> Веб-разработка</li>
+                            <li><strong>14:00-16:00</strong> JavaScript практика</li>
+                            <li><strong>19:00-21:00</strong> Самостоятельная работа</li>
+                        </ul>
+                    </div>
+                    <div class="schedule-day">
+                        <h3>Среда</h3>
+                        <ul>
+                            <li><strong>10:00-12:00</strong> Алгоритмы и структуры данных</li>
+                            <li><strong>15:00-17:00</strong> Git и командная работа</li>
+                            <li><strong>18:00-20:00</strong> Работа над проектами</li>
+                        </ul>
+                    </div>
+                    <div class="schedule-day">
+                        <h3>Пятница</h3>
+                        <ul>
+                            <li><strong>9:00-11:00</strong> Адаптивный дизайн</li>
+                            <li><strong>13:00-15:00</strong> Code Review</li>
+                            <li><strong>16:00-18:00</strong> Изучение новых технологий</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+
+           
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Учебное Портфолио</h3>
+                    <p>Сайт создан в рамках обучения веб-разработке с использованием Git и GitHub Pages</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> Об учебе</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Блог</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Технологии</h4>
+                    <ul class="tech-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>GitHub Pages</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Учебное Портфолио. Все права защищены.</p>
+                <p>Сайт разработан в учебных целях | Последнее обновление: <span id="last-update"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог - Учебное Портфолио</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="theme-switcher">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="logo-text">
+                    <h1>Учебное Портфолио</h1>
+                    <p class="tagline">Студент • Разработчик • Исследователь</p>
+                </div>
+            </div>
+            
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="about.html" class="nav-link"><i class="fas fa-user-graduate"></i> Об учебе</a></li>
+                    <li><a href="blog.html" class="nav-link active"><i class="fas fa-book"></i> Блог</a></li>
+                    <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Учебный блог</h1>
+            <p>Заметки, размышления и полезные материалы о моем обучении</p>
+            
+            <div class="blog-controls">
+                <div class="search-box">
+                    <input type="text" id="blog-search" placeholder="Поиск по блогу...">
+                    <button id="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="category-filter">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="webdev">Веб-разработка</button>
+                    <button class="filter-btn" data-filter="learning">Обучение</button>
+                    <button class="filter-btn" data-filter="projects">Проекты</button>
+                    <button class="filter-btn" data-filter="tips">Советы</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="blog-layout">
+            <div class="blog-posts" id="blog-posts-container">
+                <!-- Посты загружаются через JavaScript -->
+            </div>
+
+            <aside class="blog-sidebar">
+                <div class="sidebar-widget">
+                    <h3><i class="fas fa-user-graduate"></i> Об авторе</h3>
+                    <div class="author-card">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h4>Студент-разработчик</h4>
+                        <p>Изучаю веб-разработку и делюсь своим опытом в этом блоге.</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3><i class="fas fa-fire"></i> Популярные посты</h3>
+                    <ul class="popular-posts" id="popular-posts">
+                        <!-- Заполняется через JS -->
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3><i class="fas fa-tags"></i> Теги</h3>
+                    <div class="tags-cloud" id="tags-cloud">
+                        <!-- Заполняется через JS -->
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3><i class="fas fa-calendar-alt"></i> Архив</h3>
+                    <ul class="archive-list" id="archive-list">
+                        <!-- Заполняется через JS -->
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget newsletter-widget">
+                    <h3><i class="fas fa-envelope"></i> Рассылка</h3>
+                    <p>Подпишитесь на обновления блога</p>
+                    <div class="newsletter-form">
+                        <input type="email" id="subscribe-email" placeholder="Ваш email">
+                        <button id="subscribe-btn">Подписаться</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="pagination" id="pagination">
+            <!-- Пагинация через JS -->
+        </div>
+
+        <section class="study-tips">
+            <h2 class="section-title"><i class="fas fa-lightbulb"></i> Полезные советы по учебе</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Практика каждый день</h3>
+                    <p>Даже 30 минут кодирования в день дают лучший результат, чем редкие многочасовые сессии.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Работайте над проектами</h3>
+                    <p>Создание реальных проектов — лучший способ закрепить знания и пополнить портфолио.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Ищите единомышленников</h3>
+                    <p>Обучение в группе или с напарником повышает мотивацию и эффективность.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Документируйте прогресс</h3>
+                    <p>Ведение блога или записей о пройденном материале помогает систематизировать знания.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Учебное Портфолио</h3>
+                    <p>Сайт создан в рамках обучения веб-разработке с использованием Git и GitHub Pages</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> Об учебе</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Блог</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Технологии</h4>
+                    <ul class="tech-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>GitHub Pages</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Учебное Портфолио. Все права защищены.</p>
+                <p>Сайт разработан в учебных целях | Последнее обновление: <span id="last-update"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
